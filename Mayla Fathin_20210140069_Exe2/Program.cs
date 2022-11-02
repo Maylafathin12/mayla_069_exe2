@@ -23,10 +23,19 @@ namespace Mayla_Fathin_20210140069_Exe2
                 string s = Console.ReadLine();
                 //mendeklarasikan variable n yang di konversi dari variable s(dari string ke decimal)
                 n = decimal.Parse(s);
-                //
-                
-
+                //menggunakan if else untuk menetapkan batasan elemen yang dimasukkan
+                //jika n lebih dari 0 atau n kurang dari sama dengan 89
+                if ((n > 0) && (n <= 89))
+                    break; //menjalankan perintah selanjutnya untuk menetapkan batasan elemen yang dicari
+                else
+                Console.WriteLine("");
+                Console.WriteLine("Array hanya dapat menampung sampai 89!"); //akan menampilkan output array dapat menampung maksimal 89 elemnt
             }
+            //menerima elemen array
+            Console.Write(------------------------------);
+            Console.WriteLine("Masukkan elemen array : ");
+            Console.Write(------------------------------);
         }
+
     }
 }
