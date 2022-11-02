@@ -2,7 +2,7 @@
 
 namespace Mayla_Fathin_20210140069_Exe2
 {
-   class Exe2
+    class Exe2
     {
         //mendeklarasikan array int dengan ukuran 89
         //yang diambil dari 2 digit terakhir nim = 69
@@ -28,7 +28,7 @@ namespace Mayla_Fathin_20210140069_Exe2
                 if ((n > 0) && (n <= 89))
                     break; //menjalankan perintah selanjutnya untuk menetapkan batasan elemen yang dicari
                 else
-                Console.WriteLine("");
+                    Console.WriteLine("");
                 Console.WriteLine("Array hanya dapat menampung sampai 89!"); //akan menampilkan output array dapat menampung maksimal 89 elemnt
             }
             //menerima elemen array
@@ -49,7 +49,7 @@ namespace Mayla_Fathin_20210140069_Exe2
         }
         //metode untuk tidak mengembalikan nilai
         //metode untuk menampilkan array
-        public void Taampil()
+        public void Tampil()
         {
             Console.WriteLine("");
             Console.Write("-------------------------------");
@@ -88,5 +88,30 @@ namespace Mayla_Fathin_20210140069_Exe2
     {
         //deklarasi array int dengan nilai maksimal 89
         //maksimal data yang bia disimpan adalah 89
+        private int[] mayla = new int[89];
+        //deklarasi array B dengan batas data 89
+        private int[] B = new int[89];
+        //deklarasi variable int untuk menyimpan banyaknya data pada array
+        private int n;
+    }
+
+    private static void Main(string[] args)
+    {
+        if (args is null)
+        {
+            //membuat objek dari kelas pengguna
+            Exe2 myList = new Exe2();
+
+            //memanggil fungsi untuk menerima elemen array
+            myList.Input();
+            //memanggil fungsi untuk menampilkan array yang tersusun
+            myList.Tampil();
+            //nggak tau ini manggil apa :(((((((((
+            myList.insertionsort();
+
+            //keluar
+            Console.WriteLine("\n\nTekan tombol apa saja untuk keluar.");
+            Console.Read();
+        }
     }
 }
