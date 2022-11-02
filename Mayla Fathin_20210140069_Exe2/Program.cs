@@ -79,7 +79,14 @@ namespace Mayla_Fathin_20210140069_Exe2
                     mayla[MF + 1] = mayla[MF];
                     MF = MF - 1;
                 }
+                //store temp at index j+1
+                mayla[MF + 1] = temp;
             }
         }
+    }
+    class mergesort
+    {
+        //deklarasi array int dengan nilai maksimal 89
+        //maksimal data yang bia disimpan adalah 89
     }
 }
