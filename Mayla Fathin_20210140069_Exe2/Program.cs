@@ -32,10 +32,37 @@ namespace Mayla_Fathin_20210140069_Exe2
                 Console.WriteLine("Array hanya dapat menampung sampai 89!"); //akan menampilkan output array dapat menampung maksimal 89 elemnt
             }
             //menerima elemen array
-            Console.Write(------------------------------);
-            Console.WriteLine("Masukkan elemen array : ");
-            Console.Write(------------------------------);
-        }
+            Console.Write("------------------------------");
+            Console.WriteLine("Masukkan elemen array   : ");
+            Console.Write("------------------------------");
 
+            //menggunakan perulangan for untuk menerima array
+            //code akan berulang hingga sampai jumlah yang dimasukkan pada "masukkan banyak elemen pada array"
+            for (int i = 0; i < n; i++)
+            {
+                //menampilkan <1> dan seterusnya
+                Console.Write("<" + i + 1 + ">");
+                //membaca dan menyimpan ke dalam array mayla
+                string s1 = Console.ReadLine();
+                mayla[i] = (int)decimal.Parse(s1);
+            }
+        }
+        //metode untuk tidak mengembalikan nilai
+        //metode untuk menampilkan array
+        public void Taampil()
+        {
+            Console.WriteLine("");
+            Console.Write("-------------------------------");
+            Console.WriteLine("Elemen array telah tersusun");
+            Console.Write("-------------------------------");
+
+            //menggunakan perulangan for untuk menampilkan nilai data yang telah tersusun
+            //akan mengulang sampai perulangan tersebut sama dengan jumlah data
+            for (int MF = 0; MF < n - 1; MF++)
+            {
+                //code untuk menampilkan data yang sudah terurut
+                Console.WriteLine((Convert.ToDecimal(mayla[MF])));
+            }
+        }
     }
 }
