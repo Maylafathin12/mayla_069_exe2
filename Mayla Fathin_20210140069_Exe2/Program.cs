@@ -64,5 +64,18 @@ namespace Mayla_Fathin_20210140069_Exe2
                 Console.WriteLine((Convert.ToDecimal(mayla[MF])));
             }
         }
+        public void insertionsort() //method unntuk mengurutkan data
+        {
+            //repeat step 22,3,4,5 variying i from 1 to n-1
+            for (int i = 1; i < n; i++)
+            {
+                //set temp = arr[i]
+                decimal temp = mayla[i];
+                //set j = i - 1
+                int FM = i - 1;
+                //repeat until j becomes less than 0 or arr[MF] becomes less than or equal to temp
+                
+            }
+        }
     }
 }
