@@ -72,9 +72,13 @@ namespace Mayla_Fathin_20210140069_Exe2
                 //set temp = arr[i]
                 decimal temp = mayla[i];
                 //set j = i - 1
-                int FM = i - 1;
+                int MF = i - 1;
                 //repeat until j becomes less than 0 or arr[MF] becomes less than or equal to temp
-                
+                while ((MF >= 0) && (mayla[MF] > temp))
+                {
+                    mayla[MF + 1] = mayla[MF];
+                    MF = MF - 1;
+                }
             }
         }
     }
